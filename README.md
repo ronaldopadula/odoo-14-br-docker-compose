@@ -1,24 +1,27 @@
-# Quick install
+# Instalação simpleficada
 
-Installing Odoo 14 with one command.
+Instalando o Odoo 14 com apenas um comando.
 
 (Supports multiple Odoo instances on one server)
 
-Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run:
+
+Instalar primeiramente na sua máquina o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) para que seja possível fazer a instalação. 
+
+Vamos usar a ferramenta cURL ("URL do cliente"), para fazer as tranferências de dados através do seguinte código:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/minhng92/odoo-14-docker-compose/master/run.sh | sudo bash -s odoo-one 10014 20014
+curl -s https://github.com/ronaldopadula/odoo-14-docker-compose/blob/master/run.sh | sudo bash -s odoo14-one 10014 20014
 ```
 
-to set up first Odoo instance @ `localhost:10014` (default master password: `minhng.info`)
+para configurar a primeira instância do Odoo14 @ 'localhost:10014' (senha mestra padrão: 'minhng.info')
 
-and
+e
 
 ``` bash
-curl -s https://raw.githubusercontent.com/minhng92/odoo-14-docker-compose/master/run.sh | sudo bash -s odoo-two 11014 21014
+curl -s https://github.com/ronaldopadula/odoo-14-docker-compose/blob/master/run.sh | sudo bash -s odoo14-two 11014 21014
 ```
 
-to set up another Odoo instance @ `localhost:11014` (default master password: `minhng.info`)
+para configurar uma segunda instância do Odoo @ 'localhost:11014' (senha mestra padrão: 'minhng.info')
 
 Some arguments:
 * First argument (**odoo-one**): Odoo deploy folder
