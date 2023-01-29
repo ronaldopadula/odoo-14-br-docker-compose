@@ -2,12 +2,25 @@
 
 Instalando o Odoo 14 com apenas um comando.
 
-(Supports multiple Odoo instances on one server)
+(Suporta várias instâncias na mesma máquina.)
 
 
 Instalar primeiramente na sua máquina o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) para que seja possível fazer a instalação. 
 
-Vamos usar a ferramenta cURL ("URL do cliente"), para fazer as tranferências de dados através do seguinte código:
+Vamos usar a ferramenta cURL ("URL do cliente"), para fazer as tranferências de dados, assim, devese-se checar se há o cURL instalado:
+
+``` bash
+curl --version
+```
+Se não tiver instalado, fazê-lo com o seguinte código:
+
+``` bash
+$ sudo apt-get install curl
+# ou
+$ sudo yum install curl
+
+
+Agora, rodar a instalação do Odoo14 através do seguinte código:
 
 ``` bash
 curl -s https://github.com/ronaldopadula/odoo-14-docker-compose/blob/master/run.sh | sudo bash -s odoo14-one 10014 20014
@@ -23,17 +36,12 @@ curl -s https://github.com/ronaldopadula/odoo-14-docker-compose/blob/master/run.
 
 para configurar uma segunda instância do Odoo @ 'localhost:11014' (senha mestra padrão: 'minhng.info')
 
-Some arguments:
+Nos links anteriores, :
 * First argument (**odoo-one**): Odoo deploy folder
 * Second argument (**10014**): Odoo port
 * Third argument (**20014**): live chat port
 
-If `curl` is not found, install it:
 
-``` bash
-$ sudo apt-get install curl
-# or
-$ sudo yum install curl
 ```
 
 # Usage
