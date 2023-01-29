@@ -23,7 +23,7 @@ $ sudo yum install curl
 Agora, rodar a instalação do Odoo14 através do seguinte código:
 
 ``` bash
-curl -s https://github.com/ronaldopadula/odoo-14-docker-compose/blob/master/run.sh | sudo bash -s odoo14-one 10014 20014
+curl -s https://github.com/ronaldopadula/odoo-14-br-docker-compose/blob/master/instalar.sh | sudo bash -s odoo14-one 10014 20014
 ```
 
 para configurar a primeira instância do Odoo14 @ 'localhost:10014' (senha mestra padrão: 'minhng.info')
@@ -31,7 +31,7 @@ para configurar a primeira instância do Odoo14 @ 'localhost:10014' (senha mestr
 e
 
 ``` bash
-curl -s https://github.com/ronaldopadula/odoo-14-docker-compose/blob/master/run.sh | sudo bash -s odoo14-two 11014 21014
+curl -s https://github.com/ronaldopadula/odoo-14-br-docker-compose/blob/master/instalar.sh | sudo bash -s odoo14-two 11014 21014
 ```
 
 para configurar uma segunda instância do Odoo @ 'localhost:11014' (senha mestra padrão: 'minhng.info')
@@ -41,37 +41,37 @@ Nos links anteriores, :
 * Segundo argumento (**10014**): Porta para o Odoo
 * Terceiro argumento (**20014**): porta para o live chat
 
-# Usage
+# Usando
 
-Start the container:
+Iniciar o container:
 ``` sh
 docker-compose up
 ```
 
-* Then open `localhost:10014` to access Odoo 14.0. If you want to start the server with a different port, change **10014** to another value in **docker-compose.yml**:
+* Posteriormente abrir `localhost:10014` para acessar a instalação do Odoo 14. Se precisar inciar o servidor Odoo em uma porta diferente, mudar **10014** para outro valor referente a porta escolhida no arquivo **docker-compose.yml**:
 
 ```
 ports:
  - "10014:8069"
 ```
 
-Run Odoo container in detached mode (be able to close terminal without stopping Odoo):
+Executar o contêiner Odoo no modo desanexado (ser capaz de fechar o terminal sem parar Odoo):
 
 ```
 docker-compose up -d
 ```
 
-**If you get the permission issue**, change the folder permission to make sure that the container is able to access the directory:
+**Se receber mensagem com o problema de permissão**, altere a permissão da pasta para certificar-se de que o contêiner é capaz de acessar o diretório:
 
 ``` sh
-$ git clone https://github.com/minhng92/odoo-14-docker-compose
+$ git clone https://github.com/ronaldopadula/odoo-14-br-docker-compose.git
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
 $ mkdir -p postgresql
 $ sudo chmod -R 777 postgresql
 ```
 
-Increase maximum number of files watching from 8192 (default) to **524288**. In order to avoid error when we run multiple Odoo instances. This is an *optional step*. These commands are for Ubuntu user:
+Para evitar erros quando executamos várias instâncias do Odoo., deve-se aumentar o número máximo de arquivos em execução de 8192 (padrão) para 524288. Esta é uma etapa opcional, que no ubuntu é feita com os seguintes comandos:
 
 ```
 $ if grep -qF "fs.inotify.max_user_watches" /etc/sysctl.conf; then echo $(grep -F "fs.inotify.max_user_watches" /etc/sysctl.conf); else echo "fs.inotify.max_user_watches = 524288" | sudo tee -a /etc/sysctl.conf; fi
