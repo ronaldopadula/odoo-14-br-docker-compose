@@ -80,13 +80,13 @@ $ sudo sysctl -p    # apply new config immediately
 
 # Custom addons
 
-The **addons/** folder contains custom addons. Just put your custom addons if you have any.
+A pasta addons/ conportará addons personalizados. Basta colocar seus addons personalizados, se você tiver algum.
 
-# Odoo configuration & log
+# Configuração e log do Odoo
 
-* To change Odoo configuration, edit file: **etc/odoo.conf**.
-* Log file: **etc/odoo-server.log**
-* Default database password (**admin_passwd**) is `minhng.info`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* Para mudar as configurações do odoo, editar o arquivo: **etc/odoo.conf**.
+* O arquivo de log do Odoo é : **etc/odoo-server.log**
+* O password padrão da base de dados (**admin_passwd**) é `minhng.info`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
 # Odoo container management
 
