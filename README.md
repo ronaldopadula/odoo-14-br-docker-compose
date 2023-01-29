@@ -18,7 +18,7 @@ Se não tiver instalado, fazê-lo com o seguinte código:
 $ sudo apt-get install curl
 # ou
 $ sudo yum install curl
-
+```
 
 Agora, rodar a instalação do Odoo14 através do seguinte código:
 
@@ -37,12 +37,9 @@ curl -s https://github.com/ronaldopadula/odoo-14-docker-compose/blob/master/run.
 para configurar uma segunda instância do Odoo @ 'localhost:11014' (senha mestra padrão: 'minhng.info')
 
 Nos links anteriores, :
-* First argument (**odoo-one**): Odoo deploy folder
-* Second argument (**10014**): Odoo port
-* Third argument (**20014**): live chat port
-
-
-```
+* Primeiro Argumento (**odoo14-one**): Pasta de deploy do Odoo14
+* Segundo argumento (**10014**): Porta para o Odoo
+* Terceiro argumento (**20014**): porta para o live chat
 
 # Usage
 
