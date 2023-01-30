@@ -86,9 +86,9 @@ A pasta addons/ conportará addons personalizados. Basta colocar seus addons per
 
 * Para mudar as configurações do odoo, editar o arquivo: **etc/odoo.conf**.
 * O arquivo de log do Odoo é : **etc/odoo-server.log**
-* O password padrão da base de dados (**admin_passwd**) é `minhng.info`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* O password padrão da base de dados (**admin_passwd**) é `ronaldo.padula`, mas você pode mudar isso em @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
-# Odoo container management
+# Para administrar os containeres
 
 **Run Odoo**:
 
