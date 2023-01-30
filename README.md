@@ -23,7 +23,7 @@ $ sudo yum install curl
 Agora, rodar a instalação do Odoo14 através do seguinte código:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/ronaldopadula/odoo-14-br-docker-compose/master/instalar.sh | sudo bash -s odoo-one 10014 20014
+curl -s https://raw.githubusercontent.com/ronaldopadula/odoo-14-br-docker-compose/master/instalar.sh | sudo bash -s odoo14-one 10014 20014
 ```
 
 para configurar a primeira instância do Odoo14 @ 'localhost:10014' (senha mestra padrão: 'ronaldo.padula')
@@ -31,7 +31,7 @@ para configurar a primeira instância do Odoo14 @ 'localhost:10014' (senha mestr
 e
 
 ``` bash
-curl -s https://raw.githubusercontent.com/ronaldopadula/odoo-14-br-docker-compose/master/instalar.sh | sudo bash -s odoo-one 11014 21014
+curl -s https://raw.githubusercontent.com/ronaldopadula/odoo-14-br-docker-compose/master/instalar.sh | sudo bash -s odoo14-one 11014 21014
 ```
 
 para configurar uma segunda instância do Odoo @ 'localhost:11014' (senha mestra padrão: 'ronaldo.padula')
