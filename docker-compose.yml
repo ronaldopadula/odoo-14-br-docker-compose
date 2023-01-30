@@ -29,7 +29,7 @@ services:
     volumes:
       #- /etc/timezone:/etc/timezone:ro
       #- /etc/localtime:/etc/localtime:ro
-      - ./entrypoint.sh:/entrypoint.sh   # Como há a necessidade de instalar bibliotecas diferentes para a localização Brasileira, este ítem está disponível. Caso não, comentar esta linha.
+      #- ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
     restart: always             # run as a service
