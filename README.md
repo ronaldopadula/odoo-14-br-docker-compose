@@ -26,7 +26,7 @@ Agora, rodar a instalação do Odoo14 através do seguinte código:
 curl -s https://github.com/ronaldopadula/odoo-14-br-docker-compose/blob/master/instalar.sh | sudo bash -s odoo14-one 10014 20014
 ```
 
-para configurar a primeira instância do Odoo14 @ 'localhost:10014' (senha mestra padrão: 'minhng.info')
+para configurar a primeira instância do Odoo14 @ 'localhost:10014' (senha mestra padrão: 'ronaldo.padula')
 
 e
 
@@ -34,7 +34,7 @@ e
 curl -s https://github.com/ronaldopadula/odoo-14-br-docker-compose/blob/master/instalar.sh | sudo bash -s odoo14-two 11014 21014
 ```
 
-para configurar uma segunda instância do Odoo @ 'localhost:11014' (senha mestra padrão: 'minhng.info')
+para configurar uma segunda instância do Odoo @ 'localhost:11014' (senha mestra padrão: 'ronaldo.padula')
 
 Nos links anteriores, :
 * Primeiro Argumento (**odoo14-one**): Pasta de deploy do Odoo14
