@@ -1,4 +1,7 @@
-# Instalação simpleficada
+# Em primeiro lugar:
+Fork criado apenas para utilização em demonstração. Tradução ao Português com todos os créditos ao criado do código.
+
+# Instalação simplificada
 
 Instalando o Odoo 14 com apenas um comando.
 
